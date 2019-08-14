@@ -16,6 +16,15 @@
 .btn-ios{
     background-color: $strong-cyan;
     box-shadow: 5px 5px 10px rgba($color: $strong-cyan, $alpha: 0.8);
+
+    @media only screen and (max-width: 1200px){
+        margin-right: 1.2rem;
+    }
+
+    @media only screen and (max-width: 600px){
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
 }
 
 .btn-mac{

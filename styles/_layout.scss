@@ -9,6 +9,19 @@
     text-align: center;
     padding: 5rem 18rem;
 
+    @media only screen and (max-width: 768px){
+        padding: 5rem 12rem;
+    }
+
+    @media only screen and (max-width: 600px){
+        padding: 3rem 8rem;
+        background-image: url(../images/bg-header-mobile.png);
+    }
+
+    @media only screen and (max-width: 400px){
+        padding: 3rem 5rem;
+    }
+
     &__logo-box{
         margin-bottom: 1.5rem;
     }
@@ -19,6 +32,10 @@
         justify-content: space-around;
         min-width: 80%;
 
+        @media only screen and (max-width: 600px){
+            flex-direction: column;
+            min-width: 100%;
+        }
 
     }
 }
@@ -31,16 +48,49 @@
     flex-direction: column;
     text-align: center;
     padding: 5rem 18rem;
+
+    @media only screen and (max-width: 768px){
+        padding: 5rem 12rem;
+    }
+
+    @media only screen and (max-width: 600px){
+        padding: 5rem 10rem;
+    }
+
+    @media only screen and (max-width: 400px){
+        padding: 5rem;
+    }
 }
 
 .info-services{
     display: flex;
+
+    @media only screen and (max-width: 900px){
+        flex-direction: column;
+        justify-content: center;
+    }
 
     &__img-container{
         margin-left: -5rem;
         max-width: 100%;
         height: auto;
         display: block;
+
+        @media only screen and (max-width: 1000px){
+            margin-left: -15rem;
+        }
+
+        @media only screen and (max-width: 900px){
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        @media only screen and (max-width: 768px){
+            width: 80%;
+            margin: 1.5rem auto;
+        }
     }
 
 
@@ -48,6 +98,31 @@
         width: 65%;
         margin-bottom: 0.8rem;
         margin-left: 5rem;
+
+        @media only screen and (max-width: 1000px){
+            //transform: translateX(-45%);
+            width: 70%;
+        }
+        
+        @media only screen and (max-width: 900px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem 10rem;
+            margin-left: 8rem;
+        }
+
+        @media only screen and (max-width: 600px){
+            padding: 5rem 3rem;
+            margin-left: 6rem;
+        }
+
+        @media only screen and (max-width: 400px){
+            margin-left: 5rem;
+            padding: 3rem 2rem;
+        }
     }
 }
 
@@ -59,10 +134,27 @@
     text-align: center;
     padding: 5rem 18rem;
 
+    @media only screen and (max-width: 768px){
+        padding: 5rem;
+    }
+
     &__img-container{
         margin-top: 5rem;
         height: auto;
         display: block;
+
+        @media only screen and (max-width: 768px){
+            width: 100%;
+            margin: auto;
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__img{
+        @media only screen and (max-width: 768px){
+            max-width: 100%;
+            margin: auto;
+        }
     }
 }
 
@@ -81,6 +173,20 @@
     align-items: center;
     width: 95%;
 
+    @media only screen and (max-width: 768px){
+        flex-direction: column;
+        width: 70%;
+        margin-left: 8rem;
+    }
+
+    @media only screen and (max-width: 600px){
+        margin-left: 6rem;
+    }
+
+    @media only screen and (max-width: 400px){
+        margin-left: 4rem;
+    }
+
     &__service{
         display: flex;
         justify-content: center;
@@ -89,6 +195,9 @@
         text-align: center;
         padding: 3.5rem;
 
+        @media only screen and (max-width: 768px){
+            padding: 2rem 3.5rem;
+        }
     }
 }
 
@@ -97,6 +206,56 @@
     justify-content: space-around;
     align-items: center;
     padding: 4rem;
+
+    @media only screen and (max-width: 900px){
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+    }
+
+    
+    @media only screen and (max-width: 600px){
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__icon{
+        
+        @media only screen and (max-width: 600px){
+            margin-bottom: 2rem;
+        }   
+    }
+
+    &--icon-2{
+
+        @media only screen and (max-width: 900px){
+           grid-column: 3 / 4;
+        }
+    }
+
+    &--icon-3{
+
+        @media only screen and (max-width: 900px){
+           grid-column: 5 / 6;
+        }
+    }
+
+    &--icon-4{
+
+        @media only screen and (max-width: 900px){
+           grid-row: 2 / 3;
+           grid-column: 2 / 3;
+        }
+    }
+
+    &--icon-5{
+
+        @media only screen and (max-width: 900px){
+           grid-row: 2 / 3;
+           grid-column: 4 / 5;
+        }
+    }
 }
 
 .info-download{
@@ -108,18 +267,40 @@
     padding: 5rem 18rem;
     margin-bottom: 5rem;
 
+    @media only screen and (max-width: 768px){
+        padding: 5rem 12rem;
+    }
+
+    @media only screen and (max-width: 600px){
+        padding: 5rem 10rem;
+    }
+
+    @media only screen and (max-width: 400px){
+        padding: 5rem;
+    }
+    
     &__btn-box{
         margin-top: 2rem;
         display: flex;
         justify-content: space-around;
         min-width: 80%;
 
+        @media only screen and (max-width: 600px){
+            flex-direction: column;
+            min-width: 100%;
+        }
     }
 }
 
 .footer{
     background-color: rgba($color: $grayish-blue, $alpha: 0.5);
     display: flex;
+
+    @media only screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     &__logo-box{
         padding: 3.5rem;
@@ -129,6 +310,10 @@
 
     &__logo{
         width: 75%;
+
+        @media only screen and (max-width: 768px){
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__links{
@@ -143,8 +328,53 @@
             grid-gap: 3rem;
             align-items: center;
             list-style: none;
+
+            @media only screen and (max-width: 768px){
+                grid-template-columns: repeat(5, max-content);
+                grid-template-rows: repeat(2, 1fr);
+                grid-row-gap: 2rem;
+            }
+
+            @media only screen and (max-width: 600px){
+                display: flex;
+                flex-direction: column;
+                margin-top: 2rem;
+            }
         }
 
+    }
+
+    &--link-1{
+        @media only screen and (max-width: 768px){
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+    }
+    &--link-2{
+        @media only screen and (max-width: 768px){
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+    }
+    &--link-3{
+        @media only screen and (max-width: 768px){
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+        }
+    }
+    
+    &--link-4{
+        @media only screen and (max-width: 768px){
+            grid-row: 2 / 3;
+            grid-column: 4 / 5;
+        }
+    }
+
+    &--link-5{
+        @media only screen and (max-width: 768px){
+            grid-row: 1 / 2;
+            grid-column: 5 / 6;
+        }
     }
 
     &__social{
@@ -153,6 +383,23 @@
         flex: 1;
         padding-left: 12rem;
         padding-right: 3.5rem;
+
+        @media only screen and (max-width: 1160px){
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 6rem;
+        }
+
+        @media only screen and (max-width: 768px){
+            flex-direction: row;
+            justify-content: space-around;
+            width: 40%;
+            padding-left: 3rem;
+        }
+
+        @media only screen and (max-width: 400px){
+            width: 60%;
+        }
     }
 
     &__icon{

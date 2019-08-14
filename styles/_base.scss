@@ -1,0 +1,40 @@
+$strong-cyan: hsl(171, 66%, 44%);
+$light-blue:hsl(233, 100%, 69%);
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    
+}
+
+.text{
+    color: $grayish-blue;
+    line-height: 1.7rem;
+    margin-top: 0.8rem;
+}
+
+h1,h2,h3{
+    color: $dark-grayish-blue;
+}
+
+.icon{
+    margin-bottom: 0.8rem;
+}
+
+li{
+    color: $dark-grayish-blue;
+    cursor: pointer;
+}
